@@ -20,6 +20,18 @@ Um fluxo simples e poderoso:
 
 Você diz o que vai vender → Sistema calcula tudo → Lista de compras gerada automaticamente.
 
+## 🎨 Design & Protótipo
+
+### 📋 Protótipo v1 do Cliente
+Acesse a página **"🎨 Protótipo v1"** dentro da aplicação para visualizar o link do design original criado em Figma pelo cliente.
+
+Dentro do app, você encontrará:
+- 🔗 Link direto para o protótipo interativo
+- 📝 Explicação detalhada sobre o design original
+- 🔄 Comparação entre protótipo e implementação
+
+---
+
 ## 🚀 Funcionalidades
 
 ### 📊 Dashboard

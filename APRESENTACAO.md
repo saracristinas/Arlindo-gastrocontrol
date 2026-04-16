@@ -292,7 +292,18 @@ arlindo/
 
 ---
 
-## 🎤 Para Sua Apresentação
+## 🎨 Protótipo v1
+
+Existe uma aba específica chamada **"🎨 Protótipo v1"** no sidebar onde você acessa:
+- Link direto para o Figma do cliente
+- Explicação sobre o design original
+- Comparação entre o protótipo e a implementação atual
+
+*Tudo bem sinalizado que é o design/protótipo do cliente, não a implementação final.*
+
+---
+
+## 📝 Documentação do Sistema
 
 ### Opening
 *"Olha, a gente identifica um problema real: ninguém na cozinha sabe quantos pratos vai precisar fazer. Resultado? Compra demais, joga comida fora, não sabe margem real. GastroControl resolve isso com um fluxo simples."*
