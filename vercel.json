@@ -1,0 +1,14 @@
+{
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": "./",
+  "framework": "static",
+  "public": true,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/:path((?!css/|js/)[^.]*?)$",
+      "destination": "/index.html"
+    }
+  ]
+}
