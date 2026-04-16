@@ -93,20 +93,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* -------------------------------------------
-     6. Navegação entre páginas com transição
-  ------------------------------------------- */
-  document.querySelectorAll('a[href]').forEach(function (link) {
-    const href = link.getAttribute('href');
-    if (!href || href.startsWith('#') || href.startsWith('http')) return;
-
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.body.style.opacity = '0';
-      setTimeout(function () {
-        window.location.href = href;
-      }, 200);
-    });
-  });
-
 });
