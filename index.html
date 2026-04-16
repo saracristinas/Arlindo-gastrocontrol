@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GastroControl — Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="login-page">
+
+  <div class="login-wrapper">
+
+    <!-- Painel esquerdo decorativo -->
+    <div class="login-left">
+      <div class="login-left__bg"></div>
+      <div class="login-left__content">
+        <div class="brand">
+          <div class="brand-icon">🍽</div>
+          <span class="brand-name">GastroControl</span>
+        </div>
+        <div class="login-left__hero">
+          <h2>Controle inteligente<br/>da sua produção<br/>gastronômica</h2>
+          <p>Da previsão de demanda à ação operacional. Reduza desperdícios, otimize compras e tenha controle total da sua cozinha.</p>
+          <div class="flow-pills">
+            <span class="pill">Demanda</span>
+            <span class="pill-arrow">→</span>
+            <span class="pill">Ficha Técnica</span>
+            <span class="pill-arrow">→</span>
+            <span class="pill">Cálculo</span>
+            <span class="pill-arrow">→</span>
+            <span class="pill">Estoque</span>
+            <span class="pill-arrow">→</span>
+            <span class="pill">Ação</span>
+          </div>
+        </div>
+        <p class="login-left__footer">© 2026 GastroControl · Todos os direitos reservados</p>
+      </div>
+    </div>
+
+    <!-- Painel direito com formulário -->
+    <div class="login-right">
+      <div class="login-form-wrapper">
+        <div class="login-mobile-brand">
+          <div class="brand-icon">🍽</div>
+          <span class="brand-name">GastroControl</span>
+        </div>
+        <h1>Bem-vindo de volta</h1>
+        <p class="login-subtitle">Acesse sua conta para gerenciar sua operação</p>
+
+        <form class="login-form" onsubmit="return false;">
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="carlos@restaurante.com" class="input" />
+          </div>
+          <div class="form-group">
+            <label>Senha</label>
+            <input type="password" placeholder="••••••••" class="input" />
+          </div>
+          <div class="form-row">
+            <label class="checkbox-label">
+              <input type="checkbox" /> Lembrar de mim
+            </label>
+            <span class="link">Esqueceu a senha?</span>
+          </div>
+          <a href="dashboard.html" class="btn btn-primary btn-full">
+            Entrar <span>→</span>
+          </a>
+        </form>
+
+        <p class="login-register">Não tem conta? <span class="link">Solicite acesso</span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>

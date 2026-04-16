@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GastroControl — Briefing</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="app-page">
+
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="brand-icon">🍽</div>
+      <div>
+        <div class="brand-name">GastroControl</div>
+        <div class="brand-tagline">Produção inteligente</div>
+      </div>
+    </div>
+    <nav class="sidebar__nav">
+      <p class="nav-section-label">Sistema</p>
+      <a href="dashboard.html" class="nav-item">⊞ Dashboard</a>
+      <a href="planejamento.html" class="nav-item">📅 Planejamento</a>
+      <a href="pratos.html" class="nav-item">👨‍🍳 Fichas Técnicas</a>
+      <a href="estoque.html" class="nav-item">📦 Estoque</a>
+      <a href="compras.html" class="nav-item">🛒 Compras</a>
+      <a href="relatorios.html" class="nav-item">📊 Relatórios</a>
+      <div style="margin-top: 24px;">
+        <p class="nav-section-label">Documentação</p>
+        <a href="briefing.html" class="nav-item active">📄 Briefing</a>
+        <a href="sitemap.html" class="nav-item">🗺 Sitemap</a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <a href="index.html" class="nav-item nav-item--logout">↩ Sair</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="app-header">
+      <div class="header-left">
+        <h2 class="header-title">Briefing do Projeto</h2>
+        <p class="header-subtitle">Documentação formal — GastroControl</p>
+      </div>
+      <div class="header-right">
+        <div class="user-avatar">CM</div>
+      </div>
+    </header>
+
+    <div class="page-content">
+
+      <!-- Hero do briefing -->
+      <div class="briefing-hero">
+        <p class="briefing-hero__eyebrow">Documentação de Projeto</p>
+        <h1 class="briefing-hero__title">GastroControl</h1>
+        <p class="briefing-hero__sub">
+          Sistema de planejamento e controle de produção gastronômica orientado por demanda.
+          Uma plataforma inteligente que transforma previsão em ação operacional.
+        </p>
+        <!-- Fluxo central -->
+        <div class="flow-diagram" style="justify-content: center; margin-top: 24px;">
+          <div class="flow-step flow-step--blue"><span class="flow-step__icon">📈</span><div><div class="flow-step__title">Demanda</div><div class="flow-step__desc">Previsão de vendas</div></div></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step flow-step--green"><span class="flow-step__icon">📖</span><div><div class="flow-step__title">Ficha Técnica</div><div class="flow-step__desc">Receitas e insumos</div></div></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step flow-step--amber"><span class="flow-step__icon">🧮</span><div><div class="flow-step__title">Cálculo</div><div class="flow-step__desc">Quantidades exatas</div></div></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step flow-step--purple"><span class="flow-step__icon">📦</span><div><div class="flow-step__title">Estoque</div><div class="flow-step__desc">Verificação e saldo</div></div></div>
+          <span class="flow-arrow">→</span>
+          <div class="flow-step flow-step--rose"><span class="flow-step__icon">⚡</span><div><div class="flow-step__title">Ação</div><div class="flow-step__desc">Compras e produção</div></div></div>
+        </div>
+      </div>
+
+      <!-- Seção 01: Resumo Executivo -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">01</div>
+          <div>
+            <p class="briefing-section__eyebrow">Resumo Executivo</p>
+          </div>
+        </div>
+        <div class="briefing-section__body">
+          <p>O GastroControl é uma plataforma de gestão operacional voltada para pequenos e médios negócios gastronômicos. Seu objetivo central é integrar a cadeia de produção — desde a previsão de demanda até a execução operacional — em um fluxo contínuo, automatizado e orientado por dados.</p>
+          <p style="margin-top:12px;">A lógica do sistema parte de um princípio simples e poderoso: toda decisão operacional na cozinha deve começar pela demanda prevista. A partir dessa previsão, o sistema cruza automaticamente com fichas técnicas, calcula insumos necessários, verifica o estoque disponível e gera ações concretas — como lista de compras, alertas de validade e apoio à redução de desperdício.</p>
+        </div>
+      </div>
+
+      <!-- Seção 02: Problema -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">02</div>
+          <div><p class="briefing-section__eyebrow">Contexto do Problema</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <p>O setor de food service no Brasil enfrenta desafios crônicos de gestão operacional. Restaurantes independentes, food trucks e dark kitchens frequentemente operam com processos informais, resultando em:</p>
+          <ul class="briefing-list">
+            <li><span class="briefing-list__dot briefing-list__dot--red"></span>Falta de previsibilidade na produção — compras e preparo baseados em achismo</li>
+            <li><span class="briefing-list__dot briefing-list__dot--red"></span>Compras feitas no improviso — sem lista estruturada, gerando custos extras</li>
+            <li><span class="briefing-list__dot briefing-list__dot--red"></span>Desperdício por excesso ou vencimento — insumos comprados sem critério claro</li>
+            <li><span class="briefing-list__dot briefing-list__dot--red"></span>Falta de integração entre produção, estoque e compras</li>
+            <li><span class="briefing-list__dot briefing-list__dot--red"></span>Dificuldade em calcular o custo real dos pratos — margens imprecisas</li>
+            <li><span class="briefing-list__dot briefing-list__dot--red"></span>Falta de visão operacional consolidada — decisões fragmentadas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Seção 03: Objetivo Geral -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">03</div>
+          <div><p class="briefing-section__eyebrow">Objetivo Geral</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <p>Desenvolver uma plataforma web que permita a gestores gastronômicos planejar, controlar e otimizar sua produção a partir da demanda prevista, integrando fichas técnicas, estoque, cálculos de insumos e geração automática de ações operacionais em um único ambiente.</p>
+        </div>
+      </div>
+
+      <!-- Seção 04: Objetivos Específicos -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">04</div>
+          <div><p class="briefing-section__eyebrow">Objetivos Específicos</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="briefing-checklist">
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Permitir a entrada e gestão de demanda prevista por período</div>
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Manter repositório de fichas técnicas com insumos, quantidades e custos</div>
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Calcular automaticamente os insumos necessários (demanda × ficha técnica)</div>
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Gerenciar o estoque com alertas de nível mínimo e validade</div>
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Gerar listas de compras automáticas (necessidade − disponibilidade)</div>
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Apresentar relatórios analíticos de custos, margens e desperdício</div>
+            <div class="briefing-check-item"><span class="briefing-check">✓</span>Fornecer interface simples, intuitiva e adequada ao ritmo da cozinha</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 05: Público-alvo -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">05</div>
+          <div><p class="briefing-section__eyebrow">Público-alvo</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <p>O GastroControl é direcionado a <strong>pequenos e médios negócios gastronômicos</strong>:</p>
+          <div class="briefing-tags">
+            <span class="briefing-tag">Restaurantes independentes</span>
+            <span class="briefing-tag">Pequenas redes</span>
+            <span class="briefing-tag">Food trucks</span>
+            <span class="briefing-tag">Dark kitchens</span>
+            <span class="briefing-tag">Cozinhas de produção</span>
+            <span class="briefing-tag">Buffets e catering</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 06: Persona -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">06</div>
+          <div><p class="briefing-section__eyebrow">Persona Principal</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="persona-card">
+            <div class="persona-avatar">CM</div>
+            <div class="persona-info">
+              <div class="persona-name">Carlos Mendes</div>
+              <div class="persona-role">Dono de restaurante popular · São Paulo, SP</div>
+              <div class="persona-grid">
+                <div class="persona-item"><strong>Perfil:</strong> Empreendedor com rotina intensa e operação enxuta</div>
+                <div class="persona-item"><strong>Tecnologia:</strong> Familiaridade básica — precisa de simplicidade</div>
+                <div class="persona-item"><strong>Dor principal:</strong> Não saber quanto produzir e quanto comprar</div>
+                <div class="persona-item"><strong>Desejo:</strong> Controle operacional sem complexidade</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 07: Proposta de Valor -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">07</div>
+          <div><p class="briefing-section__eyebrow">Proposta de Valor</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="briefing-quote">
+            "O GastroControl transforma a previsão de demanda em ações operacionais concretas, eliminando achismos, reduzindo desperdícios e dando ao gestor gastronômico o controle que ele precisa — de forma simples, integrada e inteligente."
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 08: Diferencial -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">08</div>
+          <div><p class="briefing-section__eyebrow">Diferenciais Estratégicos</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="briefing-differentials">
+            <div class="differential-item">
+              <div class="differential-icon">→</div>
+              <div>
+                <div class="differential-title">Fluxo orientado por demanda</div>
+                <div class="differential-desc">Toda a cadeia começa pela previsão, não pelo estoque ou pela compra avulsa.</div>
+              </div>
+            </div>
+            <div class="differential-item">
+              <div class="differential-icon">→</div>
+              <div>
+                <div class="differential-title">Cruzamento automático</div>
+                <div class="differential-desc">Fichas técnicas são o elo entre o que se planeja servir e o que se precisa comprar.</div>
+              </div>
+            </div>
+            <div class="differential-item">
+              <div class="differential-icon">→</div>
+              <div>
+                <div class="differential-title">Ações geradas pelo sistema</div>
+                <div class="differential-desc">Listas de compras, alertas e indicadores produzidos automaticamente.</div>
+              </div>
+            </div>
+            <div class="differential-item">
+              <div class="differential-icon">→</div>
+              <div>
+                <div class="differential-title">Simplicidade operacional</div>
+                <div class="differential-desc">Interface pensada para quem opera no ritmo da cozinha, sem curva de aprendizado.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 09: Módulos -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">09</div>
+          <div><p class="briefing-section__eyebrow">Módulos do Sistema</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="modules-grid">
+            <div class="module-card">
+              <div class="module-num">01</div>
+              <div class="module-name">Fichas Técnicas</div>
+              <div class="module-desc">Pratos, receitas, insumos, custos e rendimento. O coração técnico do sistema.</div>
+            </div>
+            <div class="module-card">
+              <div class="module-num">02</div>
+              <div class="module-name">Planejamento</div>
+              <div class="module-desc">Entrada de demanda prevista por período, cruzamento com fichas técnicas e cálculo de insumos.</div>
+            </div>
+            <div class="module-card">
+              <div class="module-num">03</div>
+              <div class="module-name">Estoque</div>
+              <div class="module-desc">Controle de saldos, entradas e saídas, alertas de nível mínimo e validade.</div>
+            </div>
+            <div class="module-card">
+              <div class="module-num">04</div>
+              <div class="module-name">Compras</div>
+              <div class="module-desc">Lista automática, alertas de urgência, conferência e apoio à execução diária.</div>
+            </div>
+            <div class="module-card">
+              <div class="module-num">05</div>
+              <div class="module-name">Relatórios</div>
+              <div class="module-desc">Custos, margem por prato, desperdício, precisão do planejamento e KPIs.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 10: Requisitos Funcionais -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">10</div>
+          <div><p class="briefing-section__eyebrow">Requisitos Funcionais</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="req-list">
+            <div class="req-item"><span class="req-code">RF01</span> Cadastro e edição de pratos com ficha técnica completa</div>
+            <div class="req-item"><span class="req-code">RF02</span> Cadastro de insumos com unidade de medida, custo e estoque mínimo</div>
+            <div class="req-item"><span class="req-code">RF03</span> Entrada de demanda prevista por dia/semana</div>
+            <div class="req-item"><span class="req-code">RF04</span> Cálculo automático de insumos (demanda × ficha técnica)</div>
+            <div class="req-item"><span class="req-code">RF05</span> Verificação automática de saldo de estoque</div>
+            <div class="req-item"><span class="req-code">RF06</span> Geração automática de lista de compras</div>
+            <div class="req-item"><span class="req-code">RF07</span> Registro de entradas e saídas de estoque</div>
+            <div class="req-item"><span class="req-code">RF08</span> Alertas de estoque baixo e validade próxima</div>
+            <div class="req-item"><span class="req-code">RF09</span> Relatórios de custo por prato, margem e desperdício</div>
+            <div class="req-item"><span class="req-code">RF10</span> Dashboard com visão consolidada da operação</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seção 11: Requisitos Não Funcionais -->
+      <div class="briefing-section">
+        <div class="briefing-section__header">
+          <div class="briefing-section__num">11</div>
+          <div><p class="briefing-section__eyebrow">Requisitos Não Funcionais</p></div>
+        </div>
+        <div class="briefing-section__body">
+          <div class="req-list">
+            <div class="req-item"><span class="req-code req-code--accent">RNF01</span> Interface responsiva para desktop e tablets</div>
+            <div class="req-item"><span class="req-code req-code--accent">RNF02</span> Tempo de resposta inferior a 2 segundos para operações comuns</div>
+            <div class="req-item"><span class="req-code req-code--accent">RNF03</span> Dados armazenados com segurança e backup periódico</div>
+            <div class="req-item"><span class="req-code req-code--accent">RNF04</span> Máximo 3 cliques para qualquer ação principal</div>
+            <div class="req-item"><span class="req-code req-code--accent">RNF05</span> Suporte a múltiplos usuários com controle de acesso</div>
+            <div class="req-item"><span class="req-code req-code--accent">RNF06</span> Visual limpo, profissional e alinhado à identidade visual</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Considerações finais -->
+      <div class="briefing-closing">
+        <h3 class="briefing-closing__title">Considerações Finais</h3>
+        <p class="briefing-closing__text">
+          O GastroControl nasce de uma necessidade real e urgente do mercado gastronômico brasileiro.
+          A proposta não é ser mais um ERP, mas sim uma ferramenta focada, inteligente e acessível —
+          que fala a língua do cozinheiro e resolve as dores do gestor. O fluxo
+          <strong>Demanda → Ficha Técnica → Cálculo → Estoque → Ação</strong>
+          é o coração do produto e deve guiar todas as decisões de desenvolvimento.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>

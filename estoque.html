@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GastroControl — Estoque</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="app-page">
+
+  <aside class="sidebar">
+    <div class="sidebar__brand">
+      <div class="brand-icon">🍽</div>
+      <div>
+        <div class="brand-name">GastroControl</div>
+        <div class="brand-tagline">Produção inteligente</div>
+      </div>
+    </div>
+    <nav class="sidebar__nav">
+      <p class="nav-section-label">Sistema</p>
+      <a href="dashboard.html" class="nav-item">⊞ Dashboard</a>
+      <a href="planejamento.html" class="nav-item">📅 Planejamento</a>
+      <a href="pratos.html" class="nav-item">👨‍🍳 Fichas Técnicas</a>
+      <a href="estoque.html" class="nav-item active">📦 Estoque</a>
+      <a href="compras.html" class="nav-item">🛒 Compras</a>
+      <a href="relatorios.html" class="nav-item">📊 Relatórios</a>
+      <div style="margin-top: 24px;">
+        <p class="nav-section-label">Documentação</p>
+        <a href="briefing.html" class="nav-item">📄 Briefing</a>
+        <a href="sitemap.html" class="nav-item">🗺 Sitemap</a>
+      </div>
+    </nav>
+    <div class="sidebar__footer">
+      <a href="index.html" class="nav-item nav-item--logout">↩ Sair</a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="app-header">
+      <div class="header-left">
+        <h2 class="header-title">Estoque</h2>
+        <p class="header-subtitle">Controle de insumos e alertas</p>
+      </div>
+      <div class="header-right">
+        <div class="user-avatar">CM</div>
+      </div>
+    </header>
+
+    <div class="page-content">
+
+      <!-- KPIs de estoque -->
+      <div class="grid-4">
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--green">📦</div>
+          <div class="stat-card__value">42</div>
+          <div class="stat-card__label">Total de insumos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--emerald">✅</div>
+          <div class="stat-card__value">28</div>
+          <div class="stat-card__label">Níveis adequados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--amber">⚠️</div>
+          <div class="stat-card__value">9</div>
+          <div class="stat-card__label">Abaixo do mínimo</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card__icon stat-card__icon--red">🚨</div>
+          <div class="stat-card__value">5</div>
+          <div class="stat-card__label">Críticos / Vencendo</div>
+        </div>
+      </div>
+
+      <!-- Tabela de estoque -->
+      <div class="card card--no-pad">
+        <div class="card__header card__header--pad">
+          <h3 class="card__title">📦 Insumos em estoque</h3>
+          <button class="btn btn-primary btn-sm">+ Entrada de estoque</button>
+        </div>
+        <div class="table-scroll">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Insumo</th>
+                <th class="text-center">Unidade</th>
+                <th class="text-center">Estoque atual</th>
+                <th class="text-center">Estoque mínimo</th>
+                <th class="text-center">Última entrada</th>
+                <th class="text-center">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-medium">Tomate cereja</td>
+                <td class="text-center text-muted">kg</td>
+                <td class="text-center">2</td>
+                <td class="text-center text-muted">5</td>
+                <td class="text-center text-muted">10 Abr</td>
+                <td class="text-center"><span class="badge badge--red">🚨 Crítico</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Filé mignon</td>
+                <td class="text-center text-muted">kg</td>
+                <td class="text-center">6</td>
+                <td class="text-center text-muted">8</td>
+                <td class="text-center text-muted">12 Abr</td>
+                <td class="text-center"><span class="badge badge--amber">⚠ Baixo</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Queijo parmesão</td>
+                <td class="text-center text-muted">kg</td>
+                <td class="text-center">4</td>
+                <td class="text-center text-muted">3</td>
+                <td class="text-center text-muted">13 Abr</td>
+                <td class="text-center"><span class="badge badge--green">✓ OK</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Manjericão fresco</td>
+                <td class="text-center text-muted">maço</td>
+                <td class="text-center">1</td>
+                <td class="text-center text-muted">4</td>
+                <td class="text-center text-muted">09 Abr</td>
+                <td class="text-center"><span class="badge badge--red">🚨 Crítico</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Cogumelo paris</td>
+                <td class="text-center text-muted">kg</td>
+                <td class="text-center">0</td>
+                <td class="text-center text-muted">2</td>
+                <td class="text-center text-muted">08 Abr</td>
+                <td class="text-center"><span class="badge badge--red">🚨 Zerado</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Alface americana</td>
+                <td class="text-center text-muted">un</td>
+                <td class="text-center">8</td>
+                <td class="text-center text-muted">6</td>
+                <td class="text-center text-muted">14 Abr</td>
+                <td class="text-center"><span class="badge badge--green">✓ OK</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Queijo brie</td>
+                <td class="text-center text-muted">kg</td>
+                <td class="text-center">3</td>
+                <td class="text-center text-muted">2</td>
+                <td class="text-center text-muted">11 Abr</td>
+                <td class="text-center"><span class="badge badge--amber">⚠ Vence em 2d</span></td>
+              </tr>
+              <tr>
+                <td class="font-medium">Creme de leite</td>
+                <td class="text-center text-muted">L</td>
+                <td class="text-center">5</td>
+                <td class="text-center text-muted">3</td>
+                <td class="text-center text-muted">14 Abr</td>
+                <td class="text-center"><span class="badge badge--green">✓ OK</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script defer src="js/app.js"></script>
+</body>
+</html>
